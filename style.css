@@ -1,3 +1,4 @@
-body {
-    
+#forecastContainer {
+    direction: ltr;
+    margin: 10px;
 }
