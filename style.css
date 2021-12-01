@@ -54,7 +54,7 @@ input{
 .searched:hover{
     opacity: 1;
     border:black solid 1px;
-    box-shadow:5px 5px 10px white,-5px -5px 10px white;
+    box-shadow:5px 5px 10px rgb(255, 207, 104),-5px -5px 10px white;
     transition: 0.5s;
 }
 
@@ -155,7 +155,7 @@ li{
 .foreCard{
     border-radius: 10px;
     height: 200px;
-    background-color: rgb(79, 142, 236);
+    background-color: rgb(139, 206, 139);
 }
 
 .foreDate{
