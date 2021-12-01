@@ -37,6 +37,31 @@ function searchInput (){
 
 // Create function to display on dashboard 
 
+function Display(url){
+
+    fetch(url)
+        
+        .then(function (response) {
+
+            return response.json();
+        })
+        .then(function (data) {
+
+            console.log("data", data)
+            
+            var currentTitle = document.getElementById("currentTitle")
+            currentTitle.textContent = data.name+" ("+moment().format("MMM Do YYYY")+")"
+            
+            var longitude = data.coord.lon
+            var latitude = data.coord.lat
+            console.log(longitude, latitude)
+
+            var OCurl = "https://api.openweathermap.org/data/2.5/onecall?lat="+latitude+"&lon="+longitude+"&appid=7a35162ff8a1ab9814d70cac9d534864"
+            oneCall(OCurl)
+            
+        })
+}
+    
 
 // Main data to get and display 
 

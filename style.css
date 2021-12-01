@@ -1,4 +1,190 @@
-#forecastContainer {
-    direction: ltr;
-    margin: 10px ;
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+aside {
+    
+    min-height:100vh;
+    text-align: center;
+}
+
+button{
+    background-color: rgb(82, 161, 206);
+    margin-bottom: 10px;
+}
+
+header{
+    background-color: rgb(107, 216, 252);
+}
+
+#searchlist{
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    
+    
+
+}
+
+.searchTitle{
+    padding-top: 5%;
+}
+
+input{
+    max-width: 200px;
+    width: 70%;
+}
+
+.searched{
+    text-align: center;
+    background-color: rgb(255, 237, 138);
+    border: grey solid 1px;
+    opacity: 0.7;
+    width: 100%;
+    display: block;
+
+}
+
+.searched:hover{
+    opacity: 1;
+    border:black solid 1px;
+    box-shadow:5px 5px 10px white,-5px -5px 10px white;
+    transition: 0.5s;
+}
+
+
+main {
+    background-color: rgb(255, 247, 138);
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-container{
+    margin-top: 5%;
+    
+    min-height: 35%;
+    width: 100%;
+    position: relative;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+#currentTitle{
+    margin-left: 5%;
+    margin-top: 10px;
+    
+    width: 70%;
+    
+}
+
+#currentList{
+    margin-left: 5%;
+    margin-top:10px;
+    
+}
+
+#weathericon{
+   
+    display: inline-block;
+    position:absolute;
+    right:5%;
+    top:10px;
+    width: 100px;
+    height: 100px;
+}
+
+#uvLow{
+    background-color: green;
+    border-radius: 10px;
+}
+
+#uvModerate{
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#uvHigh{
+    background-color: orange;
+    border-radius: 10px;
+}
+
+#uvVeryhigh{
+    background-color: red;
+    border-radius: 10px;
+}
+
+#uvExtreme{
+    background-color: violet;
+    border-radius: 10px;
+}
+
+
+li{
+    margin-top:5px;
+    font-size: 150%;
+}
+
+#forecastTitle{
+    margin-left: 2%;
+    width: 100%;
+   
+}
+
+
+.forecastcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardcontainer{
+    display: inline-block;
+    width: 15%;
+}
+
+.foreCard{
+    border-radius: 10px;
+    height: 200px;
+    background-color: rgb(79, 142, 236);
+}
+
+.foreDate{
+    margin-left:2%;
+    color: white;
+}
+
+.foreTemp{
+    margin-left:2%;
+    margin-top: 2%;
+    color: white;
+}
+
+.foreIcon{
+    margin-left:2%;
+    margin-top: 2%
+}
+
+.foreHum{
+    margin-left:2%;
+    margin-top: 2%;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    aside{
+        height: auto;
+    }
 }
